@@ -8,7 +8,7 @@ __version__ = "0.0.0"
 
 REPO_NAME = "Chicken-Disease-Classification-Model"
 AUTHOR_USER_NAME = "naqibasri"
-SRC_REPO = "Chicken-Disease-Classification-Model"
+SRC_REPO = "ChickenDiseaseClassificationModel"
 AUTHOR_EMAIL = "naqib.asri.294@gmail.com"
 
 
