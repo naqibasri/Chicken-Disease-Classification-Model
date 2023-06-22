@@ -73,7 +73,7 @@ stages:
       params.yaml:
         AUGMENTATION: true
         BATCH_SIZE: 16
-        EPOCHS: 1
+        EPOCHS: 15
         IMAGE_SIZE:
         - 224
         - 224
@@ -81,7 +81,7 @@ stages:
     outs:
     - path: artifacts/training/model.h5
       hash: md5
-      md5: 5adcf49837ff8a88982aae8eaff11784
+      md5: 84610ed72f66bc3705267c863ffeec26
       size: 59337520
   evaluation:
     cmd: python src/ChickenDiseaseClassificationModel/pipeline/stage_04_evaluation.py
@@ -93,7 +93,7 @@ stages:
       nfiles: 390
     - path: artifacts/training/model.h5
       hash: md5
-      md5: 5adcf49837ff8a88982aae8eaff11784
+      md5: 84610ed72f66bc3705267c863ffeec26
       size: 59337520
     - path: config/config.yaml
       hash: md5
@@ -113,5 +113,5 @@ stages:
     outs:
     - path: scores.json
       hash: md5
-      md5: 593cf27d634cd11e071a9098573f27af
-      size: 58
+      md5: 7358fd670f69160a23a3840ac41e173c
+      size: 74
